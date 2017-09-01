@@ -6,8 +6,7 @@ namespace LAB01
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello");
-            Console.Write("World");
+            Console.WriteLine("Hello");
         }
     }
 }
