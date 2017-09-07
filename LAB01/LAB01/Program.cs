@@ -6,21 +6,14 @@ namespace LAB01
     {
         static void Main(string[] args)
         {
-            string name, lastname;
-            int id;
-            double gpa;
-            Console.Write("Enter your name : ");
-            name = Console.ReadLine();
-            Console.Write("Enter your lastname : ");
-            lastname = Console.ReadLine();
-            Console.Write("Enter your id student : ");
-            id = int.Parse(Console.ReadLine());
-            Console.Write("Enter your GPA : ");
-            gpa = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Name : {0} {1}", name, lastname);
-            Console.WriteLine("ID   : {0}", id);
-            Console.WriteLine("GPA  : {0}", gpa);
+            int N;
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            Console.WriteLine(randomNumber);
+            Console.WriteLine("Enter Integer");
+            N = int.Parse(Console.ReadLine());
+            bool a = randomNumber > N;
+            Console.WriteLine("{0}", a);
             Console.ReadKey();
         }
     }
